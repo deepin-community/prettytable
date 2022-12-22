@@ -1,0 +1,110 @@
+prettytable (0.7.2-5) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+  * Bump Standards-Version to 4.4.1.
+
+  [ Sandro Tosi ]
+  * Drop python2 support; Closes: #937323
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 30 Dec 2019 12:45:27 -0500
+
+prettytable (0.7.2-4) unstable; urgency=medium
+
+  [ Sandro Tosi ]
+  * debian/watch
+    - upse PyPI redirector
+  * debian/copyright
+    - extend packaging copyright years
+  * debian/control
+    - bump Standards-Version to 4.3.0 (no changes needed)
+  * bump compat level to 11
+  * point to github as main site
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/watch: Use https protocol
+  * Convert git repository from git-dpm to gbp layout
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 03 Feb 2019 12:30:26 -0500
+
+prettytable (0.7.2-3) unstable; urgency=medium
+
+  * debian/control
+    - switch me to Maintainer (team to Uploaders)
+    - bump Standards-Version to 3.9.5 (no changes needed)
+  * debian/{control, rules}
+    - switch to dh_python2
+  * debian/copyright
+    - extend packaging copyright years
+  * debian/{compat, control}
+    - bump to DH compat 9
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 13 May 2014 19:44:26 +0200
+
+prettytable (0.7.2-2) unstable; urgency=low
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+  [ Sandro Tosi ]
+  * debian/control
+    - bump Standards-Version to 3.9.4 (no changes needed)
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 29 Sep 2013 15:31:36 +0200
+
+prettytable (0.7.2-1) experimental; urgency=low
+
+  * New upstream release
+  * debian/copyright
+    - update upstream copyright information
+    - extend packaging copyright years
+  * debian/{control, rules}
+    - install and use UTF-8 charset, needed by test suite
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 07 Apr 2013 23:23:17 +0200
+
+prettytable (0.6.1-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/prettytable-example.py
+    - update for new 0.6 release
+  * Run tests at build-time with "python setup.py test"
+  * debian/rules
+    - install README
+
+ -- Sandro Tosi <morph@debian.org>  Wed, 06 Jun 2012 19:30:29 +0200
+
+prettytable (0.6-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/rules
+    - remove python3 transformation commands, available upstream now
+    - run tests at build time
+  * debian/copyright
+    - reorganize information
+  * Ship unittest in debian/, no longer available in upstream tarball
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 06 May 2012 11:06:13 +0200
+
+prettytable (0.5-2) unstable; urgency=low
+
+  * debian/control
+    - bump Standards-Version to 3.9.3 (no changes needed)
+  * Provide python3 package; thanks to James Page for initial patch;
+    Closes: #638303
+  * debian/source/format
+    - use 3.0 (quilt) source format
+  * debian/copyright
+    - move to DEP5 format
+    - extend packaging copyright years
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 01 May 2012 15:55:55 +0200
+
+prettytable (0.5-1) unstable; urgency=low
+
+  * Initial release (Closes: #530704)
+
+ -- Sandro Tosi <morph@debian.org>  Wed, 27 May 2009 09:14:57 +0200
