@@ -1,13 +1,13 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: prettytable
-Source: https://github.com/lmaurits/prettytable
+Source: https://github.com/jazzband/prettytable/
 
 Files: *
 Copyright: Copyright (c) 2009-2013, Luke Maurits <luke@maurits.id.au>
 License: BSD
 
 Files: debian/*
-Copyright: Copyright (C) 2009-2019 Sandro Tosi <morph@debian.org>
+Copyright: Copyright (C) 2009-2023 Sandro Tosi <morph@debian.org>
 License: BSD
 
 License: BSD
