@@ -1,3 +1,98 @@
+prettytable (3.16.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sandro Tosi <morph@debian.org>  Fri, 03 Oct 2025 00:32:23 -0400
+
+prettytable (3.15.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 17 Mar 2025 00:06:48 -0400
+
+prettytable (3.12.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/control
+    - add coverage to b-d, needed by tests
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 19 Nov 2024 18:51:57 -0500
+
+prettytable (3.10.1-1) unstable; urgency=medium
+
+  * New upstream release; Closes: #1064526
+  * debian/control
+    - replace b-d from lazy-fixture to lazy-fixtures; Closes; #1063957
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 09 Jul 2024 00:25:07 -0400
+
+prettytable (3.6.0-2) unstable; urgency=medium
+
+  * drop DPT
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 02 Mar 2024 14:16:48 -0500
+
+prettytable (3.6.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/copyright
+    - extend packaging copyright years
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 22 Jan 2023 00:06:39 -0500
+
+prettytable (3.5.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/control
+    - build using pyproject plugin; add hatchling, hatch-vcs to b-d
+    - bump Standards-Version to 4.6.2.0 (no changes needed)
+  * debian/rules
+    - remove custom test execution code, no longer needed
+  * run autopkgtest via pybuild
+
+ -- Sandro Tosi <morph@debian.org>  Fri, 30 Dec 2022 03:10:01 -0500
+
+prettytable (2.5.0-2) unstable; urgency=medium
+
+  [ Thomas Goirand ]
+  * dont register prettytable version as 0.0.0; Closes: #1003725, #1005632
+    - Add missing python3-setuptools-scm build-depends.
+    - Define SETUPTOOLS_SCM_PRETEND_VERSION.
+    - Removed patches.
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 14 Feb 2022 22:18:51 -0500
+
+prettytable (2.5.0-1) unstable; urgency=low
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * New upstream release
+  * Use the new Debian Python Team contact name and address
+  * Switch over to new upstream, JazzBand; Closes: #920137, #994845
+  * debian/copyright
+    - extend packaging copyright years
+  * debian/patches/stop_setuptools_scm.patch
+    - disable setuptools_scm
+  * debian/control
+    - add wcwidth to b-d
+    - bump debhelper-compat to 13
+    - bump Standards-Version to 4.6.0.1 (no changes needed)
+  * debian/rules
+    - install renamed README.md
+  * Run tests at build-time via pytest
+  * debian/tests/
+    - enable autopkgtest
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 04 Jan 2022 21:11:13 -0500
+
 prettytable (0.7.2-5) unstable; urgency=medium
 
   [ Ondřej Nový ]
